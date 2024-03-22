@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Contato</h1>
+    </header>
+    
+    <main>
+        
+            <form action="acao.html" method="post" enctype="multipart/form-data">
+                <br>
+           
+            <label>Nome:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <br>
+            
+            <label>Email: </label>
+            <input type="email" name="email" id="email" required> 
+            <br>
+            <br>
+            <label>Mensagem: </label>
+            <br>
+            <textarea name="Mensagem" id="Mensagem" cols="50" rows="5"></textarea>
+        
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </form>
+    </main>
+
+</body>
+</html>

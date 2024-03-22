@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Envio</h1>
+    </header>
+    
+    <main>
+        <!--elemento FORM define um formlulario html-->
+        <!--atributo "action" especifica para onde os dados do formularios serao enviados-->
+        <!--<form method> e quando enviamos para mesma pagina-->
+            <!-- quando usamos o comendao action é pq vamos mandar para outra pagina-->
+            <form action="acao.html" method="post" enctype="multipart/form-data">
+                <br>
+            <!--metodo de envio: GET ou POST-->
+            <!--o atributo "method" especifica como os dados do formulario serao enviados -->
+            <!-- o metodo GET evia os dados com parametros da URL-->
+            <!-- o metodo POST envia os dados no corpo da solicitação http-->
+            <!-- Atributo enctype especifica que tipo de dados serao enviados pelo formulario-->
+            <!-- label = etiqueta-->
+            <label>Nome:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <br>
+            <!--Label "etiqueta" o imput, ou seja informa ao usuario qual o campo a ser preenchido-->
+            <!-- o input do tipo texto aceita  somente caracteres de texto-->
+            <!-- atributo required informa  que o campo é obrigatorio-->
+            <label>Email: </label>
+            <input type="email" name="email" id="email" required> 
+            <br>
+            <br>
+            <label>Senha: </label>
+            <input type="password" name="passaword" id="passaword" required>
+            <br>
+            <br>
+            <label> Selecione um arquivo:</label>
+            <input type="file" name="file" id="file" accept=".png" multiple>
+            <br>
+            <br>
+            <!--o input senha "esconde" o texto para o usuario para aumentar a segurança -->            
+            <!-- o input file permite a submissao de arquivos por meio deo formulario-->
+            <!-- o atributo accept define os tipos de arquivos que devem ser enviados-->
+            <!--o atributo multiple define que varios arquivos podem ser submetidos pelo seu formulario-->
+            <label>Escola uma opção de envio</label>
+            <br>
+            <input type="radio" name="option1" id="option1" value="1" required> Expresso
+            <br>
+            <input type="radio" name="option1" id="option1" value="2" required checked> Padrão
+            <br>
+            <input type="radio" name="option1" id="option1" value="3" required> Econômica
+
+            <!-- o atributo "radio"  funciona como uma lista de seleção, para opçao desssa " lista" deve se colocar o mesmo "name" e "id"-->
+            <!--  o atributo que deve mudar com base na opce é o atributo "value"-->
+            <!-- o atributo "checked" ele permite que a bolinha ja fique selecionada automaticamente-->
+            <br>
+            <br>
+            
+            <input type="checkbox" name="disciplinas" id="disciplinas" > 
+            <label>Aceito os termos e condiçôes </label>
+            
+            <!-- input checkbox finciona de uma forma semelhante ao radio, so que com a opção de seleção de multiplos dados-->
+
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </form>
+    </main>
+
+</body>
+</html>
